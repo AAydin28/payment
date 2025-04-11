@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./app.css"; // CSS dosyasını unutma
+// CSS dosyasını unutma
+import "./App.css";
 
 const PaymentForm = () => {
   const [cardName, setCardName] = useState("");
@@ -8,7 +9,6 @@ const PaymentForm = () => {
   const [expiryYear, setExpiryYear] = useState("");
   //new 2
   const [cvv, setCvv] = useState("");
-
 
   const currentYear = new Date().getFullYear();
   const years = Array.from({ length: 10 }, (_, i) => currentYear + i);

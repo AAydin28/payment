@@ -1,14 +1,16 @@
 {
   "name": "payment",
-  "homepage": "https://github.com/AAydin28/payment",
+  "homepage": "https://aaydin28.github.io/payment",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "payment -d build"
   },
   "dependencies": {
     "react": "^19.0.0",
