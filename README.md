@@ -1,12 +1,26 @@
-# React + Vite
+Bu React projesi, görselde verilen tasarıma uygun bir ödeme formu oluşturmayı amaçlamaktadır. Kullanıcı, kredi kartı bilgilerini girip "Şimdi Öde" butonuna tıkladığında, tüm form verileri bir alert mesajı olarak gösterilecektir. Form verileri useState hook'u ile yönetilmiştir.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proje Özeti
+Form Elemanları:
 
-Currently, two official plugins are available:
+Kart Üzerindeki İsim (metin girişi)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Kart Numarası (metin girişi)
 
-## Expanding the ESLint configuration
+Ay (select elemanı)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Yıl (select elemanı)
+
+Güvenlik Kodu (CVV) (metin girişi)
+
+Özellikler:
+
+Her input alanının değeri, useState hook'u ile yönetilmiştir.
+
+Ay ve Yıl için select elemanları kullanılmıştır.
+
+Ay için 1-12 arası ayları temsil eden seçenekler, Yıl içinse mevcut yıldan itibaren gelecek birkaç yıl seçeneği oluşturulmuştur.
+
+"Şimdi Öde" butonuna tıklanıldığında form verileri bir alert() mesajı olarak gösterilir.
+
+Sayfanın yenilenmesi engellenmiştir.
