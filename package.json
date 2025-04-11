@@ -1,5 +1,6 @@
 {
   "name": "payment",
+  "homepage": "https://github.com/AAydin28/payment",
   "private": true,
   "version": "0.0.0",
   "type": "module",
